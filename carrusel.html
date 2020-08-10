@@ -1,0 +1,65 @@
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Juan Maioli">
+    <meta name="author" content="https://juanmaioli.com.ar">
+    <title>PiClock</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css?version=4.5.0">
+    <!-- fontawesome.com -->
+    <link rel="stylesheet" href="css/all.min.css?version=5.13.1">
+    <!-- Pi Clock styles -->
+    <link rel="stylesheet" href="css/piclock.css?version=0.1.0" >
+    <!-- Jquery for Bootstrap -->
+    <script src="js/jquery-3.5.1.min.js?version=3.5.1"></script>
+  </head>
+
+<body class="fixed-nav" id="page-top">
+
+<div class="container-fluid">
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="10000">
+      
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-body">
+                <h1 class="display-2 text-center" id="divClock">Numero 1</h1>
+            </div>    
+          </div>
+          <div class="carousel-item">
+            <div class="card-body">
+                <h1 class="display-2 text-center" id="divTemp">Numero 2</h1>
+            </div>    
+          </div>
+          <div class="carousel-item">
+            <div class="card-body">
+                <h1 class="display-2 text-center" id="divTemp">Numero 3</h1>
+            </div>    
+          </div>
+        </div>
+      
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      
+      </div>
+</div>
+<!-- Popper for Bootstrap -->
+<script src="js/popper.min.js?version=2.4.4" ></script>
+<!-- Bootstrap JS-->
+<script src="js/bootstrap.min.js?version=4.5.0"></script>
+ <!-- Pi Clock JS -->
+<script src="js/piclock.js?version=0.0.1"></script>
+<script>
+  run_Clock();
+</script>
+</body>
+
+</html>

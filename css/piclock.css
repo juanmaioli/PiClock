@@ -1,0 +1,5 @@
+/*Pi Clock Style Sheet V0.5*/
+body{font-family: 'Roboto', sans-serif;}/* .card{width:95%;height:95%;box-shadow: 0 4px 8px 0 rgba(185, 134, 134, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19);} */
+.card{width:95%;height:95%;border:none;}
+.separador{height:6em}
+.minimapa {width: 95%;height: 95%; border: none;}
