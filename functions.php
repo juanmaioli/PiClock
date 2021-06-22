@@ -32,58 +32,58 @@ function wind_cardinals($deg) {
 function weather_Icon($w_icon){
     switch ($w_icon) {
         case "01d.png": 
-            $Icon_Show = "<i class='far fa-sun text-warning fa-fw' alt='Soleado'></i>";
+            $Icon_Show = "<i class='fal fa-sun text-warning fa-fw' alt='Soleado'></i>";
             break;
             case "01n.png": 
-            $Icon_Show = "<i class='far fa-moon text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-moon text-info fa-fw'></i>";
             break;
             case "02d.png": 
-            $Icon_Show = "<i class='far fa-cloud-sun text-warning fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud-sun text-warning fa-fw'></i>";
             break;
             case "02n.png": 
-            $Icon_Show = "<i class='far fa-cloud-moon text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud-moon text-info fa-fw'></i>";
             break;
             case "03d.png": 
-            $Icon_Show = "<i class='far fa-cloud text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud text-info fa-fw'></i>";
             break;
             case "03n.png": 
-            $Icon_Show = "<i class='far fa-cloud text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud text-info fa-fw'></i>";
             break;
             case "04d.png": 
-            $Icon_Show = "<i class='far fa-cloud text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud text-info fa-fw'></i>";
             break;
             case "04n.png": 
-            $Icon_Show = "<i class='far fa-cloud text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud text-info fa-fw'></i>";
             break;
             case "09d.png": 
-            $Icon_Show = "<i class='far fa-cloud-rain text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud-rain text-info fa-fw'></i>";
             break;
             case "09n.png": 
-            $Icon_Show = "<i class='far fa-cloud-rain text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud-rain text-info fa-fw'></i>";
             break;
             case "10d.png": 
-            $Icon_Show = "<i class='far fa-cloud-sun-rain text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud-sun-rain text-info fa-fw'></i>";
             break;
             case "10n.png": 
-            $Icon_Show = "<i class='far fa-cloud-moon-rain text-info fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-cloud-moon-rain text-info fa-fw'></i>";
             break;
             case "11d.png": 
-            $Icon_Show = "<i class='far fa-bolt text-warning fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-bolt text-warning fa-fw'></i>";
             break;
             case "11n.png": 
-            $Icon_Show = "<i class='far fa-bolt text-warning fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-bolt text-warning fa-fw'></i>";
             break;
             case "13d.png": 
-            $Icon_Show = "<i class='far fa-snowflake text-primary fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-snowflake text-primary fa-fw'></i>";
             break;
             case "13n.png": 
-            $Icon_Show = "<i class='far fa-snowflake text-primary fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-snowflake text-primary fa-fw'></i>";
             break;
             case "50d.png": 
-            $Icon_Show = "<i class='far fa-smog text-white fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-smog text-white fa-fw'></i>";
             break;
             default : 
-            $Icon_Show = "<i class='far fa-thermometer-half text-danger fa-fw'></i>";
+            $Icon_Show = "<i class='fal fa-thermometer-half text-danger fa-fw'></i>";
     }
 	return $Icon_Show;
 }

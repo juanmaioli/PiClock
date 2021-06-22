@@ -17,10 +17,12 @@ include("functions.php");
 
   $city_name = $json->name;
   $temp = $json->main->temp;
+  $temp = round($temp,1);
   $temp .= " " . $weather_temp_symbol; 
   $pressure = $json->main->pressure;
   $humidity = $json->main->humidity;
   $feels_like = $json->main->feels_like;
+  $feels_like = round($feels_like,1);
   $feels_like .= " " . $weather_temp_symbol; 
   $wind_speed = $json->wind->speed;
   $wind_speed = round(($wind_speed *60*60)/1000);
@@ -126,7 +128,7 @@ include("functions.php");
             <div class="card-body">
               <div class="row">
                 <div class="col text-center">
-                <h1 class="display-3" ><i class="far fa-clock text-primary"></i>&nbsp;<span id="divClock"></span></h1>
+                <h1 class="display-3" ><i class="fal fa-clock text-primary"></i>&nbsp;<span id="divClock"></span></h1>
                 <h6><?=$longdate?></h6>
                 </div>
               </div>
@@ -148,16 +150,16 @@ include("functions.php");
                 <div class="col text-left"><h3>El Clima en <?=$city_name?></h3></div>
               </div>
               <div class="row">
-                <div class="col text-left"><h3><i class="far fa-cloud text-info fa-fw"></i>&nbsp;Sensación Térmica&nbsp;<?=$feels_like?></h3></div>
+                <div class="col text-left"><h3><i class="fal fa-cloud text-info fa-fw"></i>&nbsp;Sensación Térmica&nbsp;<?=$feels_like?></h3></div>
               </div>
               <div class="row">
-                <div class="col text-left"><h3><i class="far fa-humidity fa-fw text-primary fa-fw"></i>&nbsp;Humedad:&nbsp;<?=$humidity?>%</h3></div>
+                <div class="col text-left"><h3><i class="fal fa-humidity fa-fw text-primary fa-fw"></i>&nbsp;Humedad:&nbsp;<?=$humidity?>%</h3></div>
               </div>
               <div class="row">
-                <div class="col text-left"><h3><i class="far fa-wind fa-fw text-info fa-fw"></i>&nbsp;Viento <?=$wind_dir?>&nbsp;a&nbsp;<?=$wind_speed?> km/h</h3></div>
+                <div class="col text-left"><h3><i class="fal fa-wind fa-fw text-info fa-fw"></i>&nbsp;Viento <?=$wind_dir?>&nbsp;a&nbsp;<?=$wind_speed?> km/h</h3></div>
               </div>
               <div class="row">
-                <div class="col text-left"><h3><i class="far fa-tachometer-alt-fast text-info fa-fw"></i>&nbsp;Presi&oacute;n&nbsp;<?=$pressure?>kPa</h3></div>
+                <div class="col text-left"><h3><i class="fal fa-tachometer-alt-fast text-info fa-fw"></i>&nbsp;Presi&oacute;n&nbsp;<?=$pressure?>kPa</h3></div>
               </div>
             </div>    
           </div>
@@ -167,26 +169,26 @@ include("functions.php");
                 <div class="col text-left"><h3>El Clima en <?=$city_name?></h3></div>
               </div>
               <div class="row">
-                <div class="col text-left"><h3><i class="far fa-low-vision text-info fa-fw"></i>&nbsp;Visibilidad&nbsp;<?=$visibility?>km</h3></div>
+                <div class="col text-left"><h3><i class="fal fa-low-vision text-info fa-fw"></i>&nbsp;Visibilidad&nbsp;<?=$visibility?>km</h3></div>
               </div>
               <div class="row">
-                <div class="col text-left"><h3><i class="far fa-cloud text-info fa-fw"></i>&nbsp;Nubosidad&nbsp;<?=$clouds?>%</h3></div>
+                <div class="col text-left"><h3><i class="fal fa-cloud text-info fa-fw"></i>&nbsp;Nubosidad&nbsp;<?=$clouds?>%</h3></div>
               </div>
               <div class="row">
                   <div class="col text-left"><h3>
-                  <i class="far fa-sunrise text-warning fa-fw"></i>&nbsp;<?=$sunrise?>&nbsp;
-                  <i class="far fa-sunset text-warning fa-fw"></i>&nbsp;<?=$sunset?></h3> 
+                  <i class="fal fa-sunrise text-warning fa-fw"></i>&nbsp;<?=$sunrise?>&nbsp;
+                  <i class="fal fa-sunset text-warning fa-fw"></i>&nbsp;<?=$sunset?></h3> 
                   <h3><i class="fas fa-sun text-warning fa-fw"></i>&nbsp;<?=$sunlight?></h3></div>
               </div>
               <div class="row">
-                  <div class="col text-left"><h3><i class="far fa-moon text-primary fa-fw"></i>&nbsp;<?=$moon;?></h3></div>
+                  <div class="col text-left"><h3><i class="fal fa-moon text-primary fa-fw"></i>&nbsp;<?=$moon;?></h3></div>
               </div>
             </div>    
           </div>
           <div class="carousel-item">
             <div class="card-body">
-                <h1 class="text-left" ><i class="far fa-money-bill-wave text-success"></i> <?=$valor_compra?> / <?=$valor_venta?></h1>
-                <h1 class="text-left" ><i class="far fa-money-bill-wave text-primary"></i> <?=$valor_compra_b?> / <?=$valor_venta_b?></h1>
+                <h1 class="text-left" ><i class="fal fa-money-bill-wave text-success"></i> <?=$valor_compra?> / <?=$valor_venta?></h1>
+                <h1 class="text-left" ><i class="fal fa-money-bill-wave text-primary"></i> <?=$valor_compra_b?> / <?=$valor_venta_b?></h1>
             </div>  
           </div>
                   <!-- Left and right controls -->
