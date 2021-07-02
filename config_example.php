@@ -7,4 +7,5 @@
 	$weather_lang = "es";
 	$weather_apikey ="API_KEY";//https://openweathermap.org/api
 	$weather_temp_symbol = "°C";// °C or °F
+	$temp="";
 ?>
